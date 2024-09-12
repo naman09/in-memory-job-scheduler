@@ -16,4 +16,5 @@ Each job sleeps till it is time for next run
 
 Adv - job is executed as soon as it is ready.
 
-Dis - all threads at some point will be sleeping, not doing meaningful work and wasting compute resources.
+Dis - all threads at some point will be sleeping, not doing meaningful work. Let say in a thread pool of 10 you
+can run atmost 10 jobs. Even though some thread is sleeping, you cannot use it to run 11th job.
